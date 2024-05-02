@@ -5,12 +5,12 @@ import { addOptionsToNavMenu } from "./menu/menu.js";
     const header = document.getElementById("header");
 
     const imgIconFusion = document.createElement('img');
-    imgIconFusion.src="/assets/others/favicon.svg";
+    imgIconFusion.src="assets/others/favicon.svg";
     imgIconFusion.id="imgFusionHeader";
     header.appendChild(imgIconFusion);
 
     const imgTraco = document.createElement('img');
-    imgTraco.src="/assets/others/layer_cabecalho.svg";
+    imgTraco.src="assets/others/layer_cabecalho.svg";
     imgTraco.id = "traco_cabecalho";
     header.appendChild(imgTraco);
 
