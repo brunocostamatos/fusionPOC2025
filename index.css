@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+html {
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 0;
+    height: 100%;
+  }
+
+  #body{
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #005047;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  #titulo {
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .images img {
+    width: 518px;
+  }
+  
+  .text {
+    flex: 1;
+    padding-left: 20px;
+    font-weight: bolder;
+    color: rgb(80, 80,80);
+  }
+
+  #btnTopo {
+    display: none; /* Inicialmente oculta o botão */
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    background-color: #00BA8D;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #btnTopo:hover{
+    background-color: #005047;
+  }
+
+  #btnTopo img{
+    width: 3vh;
+    transform: rotate(270deg);
+  }
+
+
+
+/* Estilos para dispositivos com largura até 600px (smartphones em modo retrato) */
+@media only screen and (max-width: 600px) {
+  .content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .images img{
+    width: 35vh;
+    height: 25vh;
+  }
+}
+
+/* Estilos para dispositivos com largura entre 601px e 900px (smartphones em modo paisagem e tablets em modo retrato) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .images img{
+    width: 50vh;
+    height: 35vh;
+  }
+}
