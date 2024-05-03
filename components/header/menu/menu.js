@@ -1,6 +1,6 @@
 // Lista de opcoes menu
 const opcoesMenu = [
-    {title:'Home', link: ""},
+    {title:'Home', link: "/"},
     {title:'Call for Contributions',link: "call-for-contributions"},
     {title:'Submit',link: "submit"},
     {title:'Competition',link: "competition"},
@@ -19,7 +19,7 @@ const opcoesMenu = [
           let button = document.createElement('a');
           button.href= element.link
           button.innerHTML = element.title;
-          if(element.link == pageAtual){
+          if(element.link == pageAtual || pageAtual == "" && element.link == "/"){
               button.classList.add('active');
           }
           opcao.appendChild(button);
