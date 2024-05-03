@@ -1,6 +1,6 @@
 // Lista de opcoes menu
 const opcoesMenu = [
-    {title:'Home', link: "index"},
+    {title:'Home', link: "home"},
     {title:'Call for Contributions',link: "call-for-contributions"},
     {title:'Submit',link: "submit"},
     {title:'Competition',link: "competition"},
