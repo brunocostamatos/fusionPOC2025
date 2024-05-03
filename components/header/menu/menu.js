@@ -1,6 +1,6 @@
 // Lista de opcoes menu
 const opcoesMenu = [
-    {title:'Home', link: "/"},
+    {title:'Home', link: "index"},
     {title:'Call for Contributions',link: "call-for-contributions"},
     {title:'Submit',link: "submit"},
     {title:'Competition',link: "competition"},
@@ -12,14 +12,15 @@ const opcoesMenu = [
     ];
       // Função para adicionar as opcoes ao menu
      export function addOptionsToNavMenu() {
-        const pageAtual = window.location.pathname.substring(1);
+        const pageAtual = (window.location.pathname).split("/");
+        const posCorreta = pageAtual.length - 1;
         const menuContainer = document.getElementById('ul-menu-container');
         opcoesMenu.forEach(element => {
           let opcao = document.createElement('li');
           let button = document.createElement('a');
           button.href= element.link
           button.innerHTML = element.title;
-          if(element.link == pageAtual || pageAtual == "" && element.link == "/"){
+          if(pageAtual[posCorreta] == element.link){ //element.link == pageAtual || pageAtual == "" && element.link == "/"
               button.classList.add('active');
           }
           opcao.appendChild(button);
