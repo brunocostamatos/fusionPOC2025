@@ -1,0 +1,51 @@
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;;
+}
+/* Estilos para o card */
+.card {
+  background-color: #F5FFF8;
+  border-radius: 15px;
+  /* width: 300px; */
+  /* margin: 20px auto; */
+  overflow: hidden;
+  margin: 2vh;
+}
+
+/* Estilos para o header */
+.headerCard {
+  background-color: #6e9e96;
+  height: 2vh;
+  position: relative;
+}
+
+/* Estilo para o círculo branco*/
+.circuloBranco {
+  width: 3vh;
+  height: 3vh;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -15%);
+}
+
+/* Estilos para o conteúdo */
+.contentCard {
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contentCard img{
+  width: 20vh;
+  border-radius: 20px;
+}
+/* Estilos para o footer */
+.footerCard {
+  background-color: #6e9e96;
+  height: 2vh;
+}

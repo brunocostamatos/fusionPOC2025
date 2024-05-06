@@ -1,12 +1,10 @@
 /* Estilos para o menu horizontal */
 nav {
-    /* background-color: #444; */
-    padding: 10px 0;
+    padding: 5px 0; /*10px 0*/
     z-index: 2; /* Para garantir que o menu esteja acima do vídeo */
     position: absolute; /* Define o posicionamento absoluto para o menu */
     bottom: 0px; /* Alinha o menu no topo da página */
-
-    background-color:  #005047;
+    /* background-color:  #005047; */
     width: 100%;
 }
 nav ul {

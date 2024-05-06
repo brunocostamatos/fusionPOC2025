@@ -3,46 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fusion 2025</title>
+<title id="tituloSite">Fusion 2025</title>
 <link rel="icon" href="favicon.svg" type="image/x-icon">
 <link rel="stylesheet" href="components/footer/footer.css">
 <link rel="stylesheet" href="components/header/menu/menu.css">
 <link rel="stylesheet" href="components/header/header.css">
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="styles/index.css">
 <script type="module" src="js/index.js"></script>
+<script src="js/getPage.js"></script>
 </head>
 <body>
 
 <div id="header">
-  <video playsinline autoplay muted loop poster id="video-bg"><source src=".\assets\video\cristo.mp4" type="video/mp4"></video>
-  <!-- <svg src="/assets/others/layer_cabecalho.svg" width="100" height="50" viewBox="0 0 100 50"></svg> -->
+  <video playsinline autoplay loop muted thumbnail='favicon.svg' id="video-bg"><source src=".\assets\video\cristo.mp4" type="video/mp4"></video>
+  <img src="assets/others/layer_traco.svg" id="traco_cabecalho_solo">
 </div>
-
-<div id="body" class="container">  
-  <h2 id="titulo">Home</h2>
-  <div class="content">
-    <div class="images">
-      <img src="assets/others/imagem1Home.png" height="291px" alt="Imagem 1">
-      <img src="assets/others/imagem2Home.jpg" height="345px" alt="Imagem 2">
-    </div>
-    <div class="text">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec convallis lacus. Cras accumsan eu mauris non molestie. Mauris sollicitudin varius risus, sed faucibus mauris pretium a. Aenean sit amet rhoncus mauris, et malesuada felis. Nunc eu risus feugiat, luctus mi a, maximus mi. Pellentesque nibh massa, malesuada et lectus ut, rutrum auctor mi. Aliquam eget accumsan lectus. Vestibulum tristique imperdiet ex, sed finibus erat congue a. Ut ac ipsum dapibus est ultrices vehicula. Sed magna tortor, maximus in accumsan in, euismod et augue. In vel ornare lectus, quis consequat ex. Curabitur id velit elementum justo sollicitudin lobortis. Proin fermentum arcu id sem tristique, vel viverra ligula imperdiet. Mauris placerat eros sem, sed interdum nisl posuere sit amet.
-       </p>
-       <p>
-        Proin vel sodales purus. Ut id tempus sem. Morbi elit metus, lacinia sodales sodales quis, dapibus non nisl. Etiam sodales vehicula erat, ut molestie quam scelerisque aliquam. Aenean sodales in est a imperdiet. Donec dapibus nec nisi non imperdiet. Nulla tempor nibh in felis consequat, nec iaculis sem sodales. Fusce id ultricies nulla. Phasellus magna odio, sodales ut lorem vel, pretium vehicula dolor. Vestibulum bibendum mollis egestas. Vivamus in risus nec risus posuere semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec et justo sapien. Curabitur ante sapien, cursus ac pretium eu, accumsan a augue. Cras malesuada ut enim vel lacinia. Nulla lacinia iaculis justo, vel malesuada orci posuere ut.
-       </p>
-       <p>
-        Nullam in odio magna. Ut felis dui, aliquet in congue ac, auctor eget dui. Integer leo augue, iaculis quis tempus vel, convallis quis sem. Duis ac tellus nulla. Aliquam at quam non risus sagittis laoreet nec sit amet nunc. Vestibulum sit amet iaculis risus. Vivamus sed laoreet tellus. Aliquam metus tortor, pulvinar nec augue accumsan, sodales vestibulum erat. Vivamus et tortor erat. Vivamus sed vulputate est, a pharetra ante. Sed scelerisque facilisis lacus a facilisis.
-       </p>
-       <p>
-        Nulla tincidunt dictum nulla, in cursus ex vestibulum ut. Maecenas consequat eget tortor ac pellentesque. Morbi nibh tortor, tincidunt quis mollis eget, placerat in erat. Sed ultrices dictum nibh id efficitur. Donec sit amet vulputate ante. Phasellus dapibus dignissim elit. Nunc id vestibulum sem. Suspendisse potenti. 
-       </p>
+<main id="conteudo">
+  <div id="body" class="container home">  
+    <h2 id="titulo">Home</h2>
+    <div class="content">
+      <div class="images">
+        <img src="assets/others/imagem1Home.png" height="291px" alt="Imagem 1">
+        <img src="assets/others/imagem2Home.jpg" height="345px" alt="Imagem 2">
+      </div>
+      <div class="text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec convallis lacus. Cras accumsan eu mauris non molestie. Mauris sollicitudin varius risus, sed faucibus mauris pretium a. Aenean sit amet rhoncus mauris, et malesuada felis. Nunc eu risus feugiat, luctus mi a, maximus mi. Pellentesque nibh massa, malesuada et lectus ut, rutrum auctor mi. Aliquam eget accumsan lectus. Vestibulum tristique imperdiet ex, sed finibus erat congue a. Ut ac ipsum dapibus est ultrices vehicula. Sed magna tortor, maximus in accumsan in, euismod et augue. In vel ornare lectus, quis consequat ex. Curabitur id velit elementum justo sollicitudin lobortis. Proin fermentum arcu id sem tristique, vel viverra ligula imperdiet. Mauris placerat eros sem, sed interdum nisl posuere sit amet.
+        </p>
+        <p>
+          Proin vel sodales purus. Ut id tempus sem. Morbi elit metus, lacinia sodales sodales quis, dapibus non nisl. Etiam sodales vehicula erat, ut molestie quam scelerisque aliquam. Aenean sodales in est a imperdiet. Donec dapibus nec nisi non imperdiet. Nulla tempor nibh in felis consequat, nec iaculis sem sodales. Fusce id ultricies nulla. Phasellus magna odio, sodales ut lorem vel, pretium vehicula dolor. Vestibulum bibendum mollis egestas. Vivamus in risus nec risus posuere semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec et justo sapien. Curabitur ante sapien, cursus ac pretium eu, accumsan a augue. Cras malesuada ut enim vel lacinia. Nulla lacinia iaculis justo, vel malesuada orci posuere ut.
+        </p>
+        <p>
+          Nullam in odio magna. Ut felis dui, aliquet in congue ac, auctor eget dui. Integer leo augue, iaculis quis tempus vel, convallis quis sem. Duis ac tellus nulla. Aliquam at quam non risus sagittis laoreet nec sit amet nunc. Vestibulum sit amet iaculis risus. Vivamus sed laoreet tellus. Aliquam metus tortor, pulvinar nec augue accumsan, sodales vestibulum erat. Vivamus et tortor erat. Vivamus sed vulputate est, a pharetra ante. Sed scelerisque facilisis lacus a facilisis.
+        </p>
+        <p>
+          Nulla tincidunt dictum nulla, in cursus ex vestibulum ut. Maecenas consequat eget tortor ac pellentesque. Morbi nibh tortor, tincidunt quis mollis eget, placerat in erat. Sed ultrices dictum nibh id efficitur. Donec sit amet vulputate ante. Phasellus dapibus dignissim elit. Nunc id vestibulum sem. Suspendisse potenti. 
+        </p>
+      </div>
     </div>
   </div>
-  <button id="btnTopo"><img src="assets/others/seta.svg"></button>
-</div>
-
+</main>
+<button id="btnTopo"><img src="assets/others/seta.svg"></button>
 <footer id="footer">
 </footer>
 </body>

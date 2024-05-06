@@ -1,0 +1,21 @@
+  /* Estilos para as imagens */
+  .imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5fff8;
+  }
+  
+  .imagens img {
+    width: 40vh;
+    /* margin: 5px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  @media only screen and (width: 344px) {
+    .imagens img {
+      width: 35vh;
+    }
+  }

@@ -26,8 +26,8 @@ body {
   }
 
 
-  @media only screen and (max-width: 389px) {
+  /* @media only screen and (max-width: 389px) {
     .footer-svg {
       width: 15vh;
     }
-  }
+  } */

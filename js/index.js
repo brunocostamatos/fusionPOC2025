@@ -1,12 +1,17 @@
 import { addHeader} from '../components/header/header.js';
 import { addSVGsToFooter } from '../components/footer/footer.js';
 import { scrollToTop } from './scrollToTop.js';
+import { carregarPagina } from './getPage.js';
 
 window.addEventListener('DOMContentLoaded', function() {  
   addHeader();
   addSVGsToFooter();
+  const pageAtual = (window.location.hash).split("#");
+  if(pageAtual[pageAtual.length-1] != ""){ //Verifica se estou acessando a URL que não seja a Home e puxa o body da respectiva tela
+    carregarPagina(pageAtual[pageAtual.length-1])
+  }
+  
 });
-
 
 document.getElementById("btnTopo").addEventListener("click", scrollToTop);
 

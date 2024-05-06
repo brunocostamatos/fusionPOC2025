@@ -14,11 +14,18 @@ html {
   h1, h2, h3, h4, h5, h6 {
     color: #005047;
   }
+  
+  .ml-2{
+    margin: 0vh 0vh 0vh 4vh;
+  }
 
   .container {
-    max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 20px;
+  }
+
+  .home{
+    max-width: 1200px;
   }
   
   #titulo {
@@ -69,8 +76,6 @@ html {
     width: 3vh;
     transform: rotate(270deg);
   }
-
-
 
 /* Estilos para dispositivos com largura até 600px (smartphones em modo retrato) */
 @media only screen and (max-width: 600px) {

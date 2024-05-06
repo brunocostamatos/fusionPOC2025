@@ -1,3 +1,4 @@
+import {carregarPagina} from '../../../js/getPage.js';
 // Lista de opcoes menu
 const opcoesMenu = [
     {title:'Home', link: "home"},
@@ -8,21 +9,38 @@ const opcoesMenu = [
     {title:'Program',link: "program"},
     {title:'Venue & Travel',link: "venue-e-travel"},
     {title:'Organization',link: "organization"},
-    {title:'Sponsor',link: "sponsor"},
+    {title:'Sponsors',link: "sponsors"},
     ];
       // Função para adicionar as opcoes ao menu
      export function addOptionsToNavMenu() {
-        const pageAtual = (window.location.pathname).split("/");
-        const posCorreta = pageAtual.length - 1;
+        const page = window.location;
         const menuContainer = document.getElementById('ul-menu-container');
+        let pageAtual = "";
         opcoesMenu.forEach(element => {
           let opcao = document.createElement('li');
           let button = document.createElement('a');
-          button.href= element.link
+          button.href= `${element.link == 'home' ? '' : `#${element.link}`}`;
           button.innerHTML = element.title;
-          if(pageAtual[posCorreta] == element.link){ //element.link == pageAtual || pageAtual == "" && element.link == "/"
+          if(page.hash == ''){
+            pageAtual = page.pathname.split('/')
+            if(pageAtual[pageAtual.length - 1] == element.link){
               button.classList.add('active');
+            }
+          } else{
+            pageAtual = page.hash.split('#');
+            if(pageAtual[pageAtual.length - 1] == element.link){
+              button.classList.add('active');
+            }
           }
+          
+          button.addEventListener('click', function() {
+            carregarPagina(element.link, element.title)
+            Array.from(document.getElementsByClassName('active')).forEach(options => {
+              options.classList.remove('active');
+            });
+            button.classList.add('active');
+          });
+
           opcao.appendChild(button);
           menuContainer.appendChild(opcao);
         });
