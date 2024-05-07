@@ -22,6 +22,8 @@
     width: 18vh; /* 30vh 15vh*/
     margin-left: 5vh;
     margin-top: 1vh; /* 12vh 4vh*/
+    position: absolute;
+    z-index: 2;
   }
 
   #traco_cabecalho {
@@ -36,9 +38,10 @@
   }
 
   #traco_cabecalho_solo{
-    height: 123%;
+    /* height: 123%; */
     width: 50%;
     position: absolute;
+    bottom: 0;
   }
 
 @media only screen and (max-width: 389px) {
@@ -90,8 +93,9 @@
     display: none;
   }
   #traco_cabecalho_solo{
-    height: 144%;
-    width: 100vh;
+    /* height: 144%; */
+    bottom: 0;
+    width: 113vh; /*100vh*/
   }
 }
 
@@ -109,8 +113,9 @@
     display: none;
   }
   #traco_cabecalho_solo{
-    height: 144%;
-    width: 100vh;
+    /* height: 144%; */
+    bottom: 0;
+    width: 113vh; /*100vh*/
   }
 }
 
@@ -123,8 +128,9 @@
     display: none;
   }
   #traco_cabecalho_solo{
-    height: 84vh;
-    width: 117vh;
+    /* height: 84vh; */
+    bottom: 0;
+    width: 113vh; /*11vh*/
   }
 }
 
