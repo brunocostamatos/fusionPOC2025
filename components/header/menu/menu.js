@@ -34,7 +34,7 @@ const opcoesMenu = [
           }
           
           button.addEventListener('click', function() {
-            carregarPagina(element.link, element.title)
+            carregarPagina(element.link)
             Array.from(document.getElementsByClassName('active')).forEach(options => {
               options.classList.remove('active');
             });

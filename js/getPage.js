@@ -1,5 +1,5 @@
 // Função para carregar uma página dentro do elemento de conteúdo
-export function carregarPagina(url, title) {
+export function carregarPagina(url) {
     fetch(url) // Carrega o conteúdo da URL usando Fetch API
       .then(response => response.text()
     )
