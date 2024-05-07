@@ -10,7 +10,11 @@ window.addEventListener('DOMContentLoaded', function() {
   if(pageAtual[pageAtual.length-1] != ""){ //Verifica se estou acessando a URL que não seja a Home e puxa o body da respectiva tela
     carregarPagina(pageAtual[pageAtual.length-1])
   }
-  
+
+  //Pausa o video depois de 6 segundos, para que não apareça o fundo verde do fim do video
+  setTimeout(function() {
+    document.getElementById('video-bg').pause();
+  }, 6000);
 });
 
 document.getElementById("btnTopo").addEventListener("click", scrollToTop);
