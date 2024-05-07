@@ -14,6 +14,11 @@ import { addOptionsToNavMenu } from "./menu/menu.js";
     imgTraco.id = "traco_cabecalho";
     header.appendChild(imgTraco);
 
+    const imgSomenteTraco = document.createElement('img');
+    imgSomenteTraco.src = "assets/others/layer_traco.svg";
+    imgSomenteTraco.id = "traco_cabecalho_solo";
+    header.appendChild(imgSomenteTraco);
+
 
     const nav = document.createElement('nav');
     const ulNav = document.createElement('ul');
