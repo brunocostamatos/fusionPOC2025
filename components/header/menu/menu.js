@@ -23,7 +23,7 @@ const opcoesMenu = [
           button.innerHTML = element.title;
           if(page.hash == ''){
             pageAtual = page.pathname.split('/')
-            if(pageAtual[pageAtual.length - 1] == element.link){
+            if(pageAtual[pageAtual.length - 1].includes(element.link)){ //pageAtual[pageAtual.length - 1] == element.link
               button.classList.add('active');
             }
           } else{
