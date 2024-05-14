@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); */
+
+@font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: url('/assets/others/sourceSansPro/sourcesanspro-regular-webfont.woff') format('woff');
+}
+
 
 html {
     margin-right: 4px;
@@ -8,7 +14,7 @@ html {
   }
 
   #body{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro Regular',  sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -17,6 +23,10 @@ html {
   
   .ml-2{
     margin: 0vh 0vh 0vh 4vh;
+  }
+
+  .mb-2{
+    margin-bottom: 2vh;
   }
 
   .container {
@@ -50,9 +60,12 @@ html {
   
   .text {
     flex: 1;
-    padding-left: 20px;
     font-weight: bolder;
     color: rgb(80, 80,80);
+  }
+
+  .pl-2{
+    padding-left: 20px;
   }
 
   #btnTopo {

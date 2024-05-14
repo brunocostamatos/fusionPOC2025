@@ -1,5 +1,6 @@
 /* Estilos para o menu horizontal */
 nav {
+    font-family: 'Source Sans Pro Regular',  sans-serif;    
     padding: 5px 0; /*10px 0*/
     z-index: 2; /* Para garantir que o menu esteja acima do vídeo */
     position: absolute; /* Define o posicionamento absoluto para o menu */
@@ -25,7 +26,7 @@ nav ul li:last-child {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     padding: 8px 12px; /* Adiciona preenchimento ao link */
     border-radius: 5px; /* Adiciona bordas arredondadas */
 }
@@ -56,7 +57,7 @@ nav ul li:hover a{
         font-size: 10px;
     }
     nav ul li a {
-        font-size: 14px;
+        font-size: 12px;
     }
   }
   
@@ -66,7 +67,7 @@ nav ul li:hover a{
         display: block;
     }
     nav ul li a {
-        font-size: 16px;
+        font-size: 15px;
     }
   }
   
@@ -76,6 +77,6 @@ nav ul li:hover a{
         display: block;
     }
     nav ul li a {
-        font-size: 16px;
+        font-size: 15px;
     }
   }
