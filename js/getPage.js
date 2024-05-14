@@ -11,7 +11,7 @@ export function carregarPagina(url) {
           // Procura o elemento pelo ID
           const elemento = doc.getElementById('tituloSite');
           document.getElementById('conteudo').innerHTML = html;// Define o HTML da página dentro do elemento de conteúdo
-          document.getElementById('tituloSite').innerHTML = elemento.innerHTML;// Define o title da página
+          document.getElementById('tituloSite').innerHTML = elemento.innerHTML;// Define o title da página que está sendo acessada
         }else{
             document.getElementById('conteudo').innerHTML = '<h2 id="titulo">Page not found</h2>'
         }
