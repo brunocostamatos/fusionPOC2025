@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Source Sans Pro Regular';
-  src: url('/assets/others/sourceSansPro/sourcesanspro-regular-webfont.woff') format('woff');
+  src: url('../assets/others/sourceSansPro/sourcesanspro-regular-webfont.woff') format('woff');
 }
 
 
