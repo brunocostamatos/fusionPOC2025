@@ -42,11 +42,147 @@ nav ul li:hover a{
 
 
 
+/* Estilos para o menu mobile */
+
+.menu-hamburger{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #menu-hamburguer-elements{
+    display: none;
+  }
+  
+  #menu-hamburguer-elements li{
+    list-style: none;
+    font-size: 1.4rem;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    list-style: none;
+    border: none;
+  }
+  
+  #menu-hamburguer-elements a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  #menu-hamburguer-elements a:hover{
+    color: #F2C511
+  }
+
+  #menu-hamburguer-elements a.active {
+    color: #F2C511;    
+}
+  
+  
+  /* BOTÃO MENU HAMBURGUER */
+  .menu {
+    width: 60px;
+    height: 60px;
+    margin: 1rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .hamburguer {
+    position: relative;
+    display: block;
+    background: #fff;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .hamburguer:before,
+  .hamburguer:after {
+    background: #ffff;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .hamburguer:before {
+    top: -10px;
+  }
+  
+  .hamburguer:after {
+    bottom: -10px;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  /* rotação dos elementos do span */
+  input:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+  }
+  
+  input:checked ~ label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  
+  input:checked ~ label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+  
+  input:checked ~ #menu-hamburguer-elements{
+    right: 0;
+  }
+
+
 
   /* Estilos para dispositivos com largura até 600px (smartphones em modo retrato) */
 @media only screen and (max-width: 600px) {
     nav{
         display: none;
+    }
+
+    .menu{
+        display: flex;
+        height: 60px;
+        width: 60px;
+    }
+
+    .menu-hamburger{
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-self: flex-start;
+        overflow: auto;
+        z-index: 6;
+        color: white;
+    }
+  
+    #menu-hamburguer-elements{
+        width: 20vh;
+        height: 100vh;
+        /* background-color: rgba(10,10,10,.9); */
+        background-color: #01634aa1;
+        position: fixed;
+        right: -80%;
+        top: 0;
+        
+        transition: right cubic-bezier(1,0,0,1) .8s;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    
+        /* padding-top: 15vh; */
+    
+        z-index: -1;
     }
   }
   

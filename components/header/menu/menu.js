@@ -4,7 +4,7 @@ const opcoesMenu = [
     {title:'Home', link: "home"},
     {title:'Call for Contributions',link: "call-for-contributions"},
     {title:'Submit',link: "submit"},
-    {title:'Competition',link: "competition"},
+    // {title:'Competition',link: "competition"},
     {title:'Register',link: "register"},
     {title:'Program',link: "program"},
     {title:'Venue & Travel',link: "venue-e-travel"},
@@ -12,9 +12,9 @@ const opcoesMenu = [
     {title:'Sponsors',link: "sponsors"},
     ];
       // Função para adicionar as opcoes ao menu
-     export function addOptionsToNavMenu() {
+     export function addOptionsToNavMenu(id) {
         const page = window.location;
-        const menuContainer = document.getElementById('ul-menu-container');
+        const menuContainer = document.getElementById(id);
         let pageAtual = "";
         opcoesMenu.forEach(element => {
           let opcao = document.createElement('li');
@@ -34,6 +34,9 @@ const opcoesMenu = [
           }
           
           button.addEventListener('click', function() {
+            if(id == 'menu-hamburguer-elements'){ //verifica se o clique veio de uma opcao do menu mobile e fecha o menu mobile
+              document.getElementById('menu-hamburguer').click();
+            }
             carregarPagina(element.link)
             Array.from(document.getElementsByClassName('active')).forEach(options => {
               options.classList.remove('active');
