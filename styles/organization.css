@@ -41,7 +41,8 @@
   align-items: center;
 }
 .contentCard img{
-  width: 20vh;
+  width: 18vh; /*20vh*/
+  height: 22vh;
   border-radius: 20px;
 }
 /* Estilos para o footer */
