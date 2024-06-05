@@ -39,11 +39,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 26vh;
 }
 .contentCard img{
-  width: 18vh; /*20vh*/
-  height: 22vh;
+  width: 20vh; /*18vh 20vh*/
+  height: 24vh; /*22vh*/
   border-radius: 20px;
+}
+
+.contentCard h2{
+  text-align: center;
 }
 /* Estilos para o footer */
 .footerCard {
