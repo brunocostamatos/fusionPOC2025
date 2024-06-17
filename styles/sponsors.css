@@ -59,6 +59,19 @@
     padding: 5%;
   }
 
+  .link{
+    color: black;
+  }
+
+  .link a{
+    text-decoration: none;
+  }
+
+  .link a:hover{
+    transition: all 0.3s ease 0s;
+    color: #005047;
+  }
+
   /* Estilo para responsividade */
   @media (max-width: 768px) {
       .card-container {
