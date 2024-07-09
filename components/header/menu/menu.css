@@ -2,7 +2,7 @@
 nav {
     font-family: 'Source Sans Pro Regular',  sans-serif;    
     padding: 5px 0; /*10px 0*/
-    z-index: 2; /* Para garantir que o menu esteja acima do vídeo */
+    z-index: 1; /* Para garantir que o menu esteja acima do vídeo */
     position: absolute; /* Define o posicionamento absoluto para o menu */
     bottom: 0px; /* Alinha o menu no topo da página */
     /* background-color:  #005047; */
@@ -15,6 +15,7 @@ nav ul {
     /* text-align: center; */
 }
 nav ul li {
+    position: relative;
     display: inline;
     /* margin-right: 20px; */
     border-right: 1px solid #fff;
@@ -35,12 +36,41 @@ nav ul li a.active {
     color: #F2C511;
     /* text-decoration: underline #b8f5cf; */
 }
-nav ul li:hover a{
+.buttonClickable:hover a{
     color: #F2C511;
     /* text-decoration: underline #b8f5cf; */
 }
 
+.subMenu {
+  list-style-type: none;
+  display: none; /* Esconde a sublista por padrão */
+  flex-direction: column;
+  align-items: flex-start;
+  
+  position: absolute;
+  
+  background-color: #008269;
+  color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  
+  padding: 10px;
+  line-height: 24px;
+  width: 175px;
+  left: 0;
+  top: -125px;/* Posiciona a sublista abaixo do item pai */
+  z-index: 100000000; /* Garante que a sublista fique acima dos demais elementos */
+}
 
+.subMenu li:hover a {
+  color: #F2C511;
+}
+
+.subMenu li{
+  border: none;
+}
+.buttonSubMenu:hover .subMenu{
+  display: flex;
+}
 
 /* Estilos para o menu mobile */
 
@@ -52,13 +82,13 @@ nav ul li:hover a{
   
   #menu-hamburguer-elements{
     display: none;
+    overflow-y: scroll;
   }
   
   #menu-hamburguer-elements li{
     list-style: none;
-    font-size: 1.4rem;
-    margin: 2rem 0;
-    font-size: 1.4rem;
+    margin: 1.5rem 0;
+    font-size: 1rem;
     list-style: none;
     border: none;
   }
@@ -165,6 +195,8 @@ nav ul li:hover a{
     }
   
     #menu-hamburguer-elements{
+        white-space: nowrap;
+        overflow-y: scroll;
         width: 20vh;
         height: 100vh;
         /* background-color: rgba(10,10,10,.9); */
