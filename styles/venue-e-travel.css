@@ -103,6 +103,9 @@ iframe{
   flex-direction: column;
 }
 
+.listaSemIndicador{
+  list-style-type: none;
+}
 
 
 @media only screen and (width: 344px) {
