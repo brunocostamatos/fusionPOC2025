@@ -5,6 +5,10 @@
   line-height: 50px;
 }
 
+.listaLineHeight30{
+  line-height: 30px;
+}
+
 a{
   text-decoration: none;
 }
