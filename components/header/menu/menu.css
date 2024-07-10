@@ -82,7 +82,7 @@ nav ul li a.active {
   
   #menu-hamburguer-elements{
     display: none;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
   
   #menu-hamburguer-elements li{
@@ -196,7 +196,7 @@ nav ul li a.active {
   
     #menu-hamburguer-elements{
         white-space: nowrap;
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
         width: 20vh;
         height: 100vh;
         /* background-color: rgba(10,10,10,.9); */
