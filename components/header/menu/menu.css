@@ -87,7 +87,7 @@ nav ul li a.active {
   
   #menu-hamburguer-elements li{
     list-style: none;
-    margin: 1.5rem 0;
+    margin: 2.5vh 0;
     font-size: 1rem;
     list-style: none;
     border: none;
@@ -197,7 +197,7 @@ nav ul li a.active {
     #menu-hamburguer-elements{
         white-space: nowrap;
         /* overflow-y: scroll; */
-        width: 20vh;
+        /* width: 15vh; */
         height: 100vh;
         /* background-color: rgba(10,10,10,.9); */
         background-color: #01634aa1;
@@ -214,7 +214,11 @@ nav ul li a.active {
     
         /* padding-top: 15vh; */
     
-        z-index: -1;
+        z-index: 20;
+    }
+
+    #menu-hamburguer-elements a{
+      font-size: 1.5vh;
     }
   }
   
